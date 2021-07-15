@@ -7,6 +7,7 @@
 function calculator() {
     const operatorStr = process.argv[2];
     let currentEval = Number(process.argv[3]);
+    
     if(operatorStr !== 'plus' && operatorStr !== 'minus'){ //will either be undefined or a diff operator or a number
         console.log('MADE IT INSIDE')
         if(!!Number(operatorStr)/1 || !operatorStr){ // if its divisible by 1 and does not result in NaN or is undefined
